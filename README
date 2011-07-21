@@ -1,0 +1,45 @@
+This is a modified keymap for X11 which I prefer to use on my systems.
+
+It's a US-based layout with some special characters available on the
+<Alt>-key on the right side of the space bar (RAlt).
+
+Most charachter are available by holding <RAlt> while typing another
+key. E.g. <RAlt>+<a> will give you the german umlaut ä.
+
+Deadkey-combinations are available too for creating accented
+characters: Hold <RAlt> and type <,>. Now release <RAlt> and type
+the char you want to get accented. 
+
+Overview:
+ 1) German umlauts, ß and Euro-sign:
+	RAlt + A, O, U  ==>  Ä, Ö, Ü
+	RAlt + s        ==>  ß
+	RAlt + e        ==>  €
+
+ 2) Some technical stuff:
+	RAlt + m        ==>  µ
+	RAlt + 2, 3     ==>  ², ³
+
+ 3) Dead keys for creating accented chars:
+	RAlt + , + ...	==>  ¸, ç, ȩ, ţ, ḑ, ...
+	RAlt + . + ...  ==>  ˙, ȧ, ė, ṫ, ḋ, ...
+	RAlt + ` + ...  ==>  à, è, ì, ò, ù, ...
+	RAlt + ' + ...  ==>  á, é, í, ó, ú, ...
+	RAlt + ; + ...  ==>  ą, ę, į, ǫ, ų, ...
+	
+
+To use this keymap, either copy the file 'us'
+to '/usr/share/X11/xkb/symbols/us' or apply the supplied patch:
+
+ # cd /usr/share/X11/xkb/symbols
+ # patch < ~/your-keymap-dir/us.diff
+
+
+Activate the keymap with setxkbmap:
+ 
+ $ setxkbmap us dev-intl
+
+
+Please make a copy of your original files before you replace
+or modify anything!
+
