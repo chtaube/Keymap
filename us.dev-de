@@ -1,0 +1,46 @@
+
+// Layout file for those developers in Germany typing on US keyboards.
+// German Umlauts and the Eszett are available on <AltGr>+<a>, <AltGr>+<o>,
+// <AltGr>+<u> and <AltGr>+<s>. All deadkeys are on the AltGr layer, no
+// deadkeys for symbols used on the shell or in programming languages.
+//
+// http://github.com/chtaube/Keymap
+
+partial alphanumeric_keys
+xkb_symbols "dev-de"
+  name[Group1]= "USA - German developers";
+  include "us(basic)"
+  include "ctrl(nocaps)"
+ 
+  key <TLDE> { [      grave, asciitilde,    dead_grave,       dead_tilde    ] };
+  key <AE01> { [          1, exclam,        onesuperior,      exclamdown    ] };
+  key <AE02> { [          2, at,            twosuperior,      twosuperior   ] };
+  key <AE03> { [          3, numbersign,    threesuperior,    threesuperior ] };
+  key <AE05> { [          5, percent,       EuroSign                        ] };
+  key <AE06> { [          6, asciicircum,   dead_circumflex,  onequarter    ] };
+  key <AE07> { [          7, ampersand,     dead_horn,        onehalf       ] };
+  key <AE08> { [          8, asterisk,      degree,           threequarters ] };
+  key <AE09> { [          9, parenleft,  leftsinglequotemark, dead_breve    ] };
+  key <AE10> { [          0, parenright, rightsinglequotemark, dead_abovering ] };
+  key <AE11> { [      minus, underscore,    dead_macron,      dead_belowdot ] };
+  key <AE12> { [      equal, plus,          dead_doubleacute, dead_horn     ] };
+ 
+  key <AD03> { [          e, E,             EuroSign,         cent          ] };
+  key <AD07> { [          u, U,             udiaeresis,       Udiaeresis    ] };
+  key <AD09> { [          o, O,             odiaeresis,       Odiaeresis    ] };
+ 
+  key <AC01> { [          a, A,             adiaeresis,       Adiaeresis    ] };
+  key <AC02> { [          s, S,             ssharp,           S             ] };
+  key <AC10> { [  semicolon, colon,         dead_ogonek,      dead_diaeresis ] };
+  key <AC11> { [ apostrophe, quotedbl,      dead_acute,       dead_diaeresis ] };
+ 
+  key <AB01> { [          z, Z,             ae,               AE              ] };
+  key <AB02> { [          x, X,             oe,               OE              ] };
+  key <AB07> { [          m, M,             mu,               mu              ] };
+  key <AB08> { [      comma, less,          dead_cedilla,     dead_caron      ] };
+  key <AB09> { [     period, greater,       dead_abovedot,    dead_circumflex ] };
+  key <AB10> { [      slash, question,      dead_hook,        U2E2E           ] };
+ 
+  include "level3(ralt_switch)"
+};
+
