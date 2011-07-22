@@ -1,7 +1,8 @@
 This is a modified keymap for X11 which I prefer to use on my systems.
 
 It's a US-based layout with some special characters available on the
-<Alt>-key on the right side of the space bar (RAlt).
+<Alt>-key on the right side of the space bar. I call it RAlt in this
+document. It may be labeled AltGr on some keyboards.
 
 Most charachter are available by holding <RAlt> while typing another
 key. E.g. <RAlt>+<a> will give you the german umlaut ä.
@@ -18,7 +19,8 @@ Overview:
 
  2) Some technical stuff:
 	RAlt + m        ==>  µ
-	RAlt + 2, 3     ==>  ², ³
+	RAlt + 1, 2, 3  ==>  ¹, ², ³
+	RAlt + 
 
  3) Dead keys for creating accented chars:
 	RAlt + , + ...	==>  ¸, ç, ȩ, ţ, ḑ, ...
@@ -28,18 +30,17 @@ Overview:
 	RAlt + ; + ...  ==>  ą, ę, į, ǫ, ų, ...
 	
 
-To use this keymap, either copy the file 'us'
-to '/usr/share/X11/xkb/symbols/us' or apply the supplied patch:
+To use this keymap, simply concatenate the file 'us.dev-de'
+to '/usr/share/X11/xkb/symbols/us' using the 'cat' command:
 
  # cd /usr/share/X11/xkb/symbols
- # patch < ~/your-keymap-dir/us.diff
+ # cat ~/your-git-stuff/Keymap/us.dev-de >> us
 
 
 Activate the keymap with setxkbmap:
  
- $ setxkbmap us dev-intl
+ $ setxkbmap us dev-de
 
-
-Please make a copy of your original files before you replace
+Please keep a copy of your original files before you replace
 or modify anything!
 
