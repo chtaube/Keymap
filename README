@@ -1,3 +1,7 @@
+  http://chtaube.de/xkbmap
+  http://github.com/chtaube/Keymap
+---
+
 This is a modified keymap for X11 which I prefer to use on my systems.
 
 It's a US-based layout with some special characters available on the
@@ -13,22 +17,22 @@ the char you want to get accented.
 
 Overview:
  1) German umlauts, ß and Euro-sign:
-	RAlt + A, O, U  ==>  Ä, Ö, Ü
-	RAlt + s        ==>  ß
-	RAlt + e        ==>  €
+        RAlt + A, O, U  ==>  Ä, Ö, Ü
+        RAlt + s        ==>  ß
+        RAlt + e        ==>  €
 
  2) Some technical stuff:
-	RAlt + m        ==>  µ
-	RAlt + 1, 2, 3  ==>  ¹, ², ³
-	RAlt + 
+        RAlt + m        ==>  µ
+        RAlt + 1, 2, 3  ==>  ¹, ², ³
+        RAlt + 
 
  3) Dead keys for creating accented chars:
-	RAlt + , + ...	==>  ¸, ç, ȩ, ţ, ḑ, ...
-	RAlt + . + ...  ==>  ˙, ȧ, ė, ṫ, ḋ, ...
-	RAlt + ` + ...  ==>  à, è, ì, ò, ù, ...
-	RAlt + ' + ...  ==>  á, é, í, ó, ú, ...
-	RAlt + ; + ...  ==>  ą, ę, į, ǫ, ų, ...
-	
+        RAlt + , + ...  ==>  ¸, ç, ȩ, ţ, ḑ, ...
+        RAlt + . + ...  ==>  ˙, ȧ, ė, ṫ, ḋ, ...
+        RAlt + ` + ...  ==>  à, è, ì, ò, ù, ...
+        RAlt + ' + ...  ==>  á, é, í, ó, ú, ...
+        RAlt + ; + ...  ==>  ą, ę, į, ǫ, ų, ...
+        
 
 To use this keymap, simply concatenate the file 'us.dev-de'
 to '/usr/share/X11/xkb/symbols/us' using the 'cat' command:
